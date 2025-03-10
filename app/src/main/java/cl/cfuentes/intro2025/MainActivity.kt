@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         catch (e:Exception){
-            Toast.makeText(this,"La camara de este dispositivo no tiene un flash para ser utilizado como linterna", Toast.LENGTH_SHORT)
+            Toast.makeText(this,"La camara de este dispositivo no tiene un flash para ser utilizado como linterna", Toast.LENGTH_SHORT).show()
             finish()
         }
 
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             cameraManager.setTorchMode(cameraId,flashEstaEncendido)
         }
         catch (e:CameraAccessException) {
-            Toast.makeText(this,"Error al utilizar el flash de la camara",Toast.LENGTH_SHORT)
+            Toast.makeText(this,"Error al utilizar el flash de la camara",Toast.LENGTH_SHORT).show()
         }
     }
 }
